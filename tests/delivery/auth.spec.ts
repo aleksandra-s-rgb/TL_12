@@ -7,8 +7,7 @@ export const baseUrl = 'https://backend.tallinn-learning.ee'
 export const loginEndpoint = '/login/student'
 export const ordersEndpoint = '/orders'
 
-// unskip when ready to use
-test.describe.skip('Authorization flow', () => {
+test.describe('Authorization flow', () => {
   test.beforeAll(() => {
     loginDto = new Login(process.env['DL_USERNAME']!, process.env['DL_PASSWORD']!)
   })
